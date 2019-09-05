@@ -16,3 +16,8 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_osprey.mk
 
+COMMON_LUNCH_CHOICES := \
+    lineage_osprey-user \
+    lineage_osprey-userdebug \
+    lineage_osprey-eng
+
