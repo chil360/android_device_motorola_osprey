@@ -73,10 +73,6 @@ void vendor_load_properties()
     char fingerprint[PROP_VALUE_MAX];
     char tv[PROP_VALUE_MAX];
 
-    std::string platform = GetProperty("ro.board.platform","");
-    if (platform != ANDROID_TARGET)
-        return;
-
     // Warning-less way of sprintf(var, "");
     ds[0] = 0;
     tv[0] = 0;
