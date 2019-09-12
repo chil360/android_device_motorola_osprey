@@ -2,10 +2,9 @@ cc_library_static {
     name: "libinit_osprey",
     recovery_available: true,
 
-    include_dirs: ["system/core/init"],
-    cppflags: [
-        "-Wall",
-        "-DANDROID_TARGET=\"msm8916\"",
+    include_dirs: [
+        "system/core/base/include",
+        "system/core/init",
     ],
 
     srcs: ["init_osprey.cpp"],
