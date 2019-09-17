@@ -76,7 +76,6 @@ on property:sys.boot_completed=1
     setprop sys.io.scheduler bfq
 
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
-    write /sys/devices/system/cpu/cpu0/online 1
 
     # HMP scheduler settings
     write /proc/sys/kernel/sched_ravg_hist_size 3
@@ -122,8 +121,6 @@ on property:sys.boot_completed=1
     write /dev/cpuset/top-app/cpus 0-3
     write /dev/cpuset/camera-daemon/cpus 0-3
     write /dev/cpuset/restricted/cpus 0-3
-
-    start batt_health
 
     write /sys/class/devfreq/1c00000.qcom,kgsl-3d0/governor "msm-adreno-tz"
     write /sys/class/devfreq/qcom,cpubw.30/governor "cpufreq"
