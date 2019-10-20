@@ -16,3 +16,8 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/havoc_osprey.mk
 
+COMMON_LUNCH_CHOICES := \
+    havoc_osprey-user \
+    havoc_osprey-userdebug \
+    havoc_osprey-eng
+
