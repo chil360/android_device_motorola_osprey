@@ -13,7 +13,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Inherit from osprey device
 $(call inherit-product, device/motorola/osprey/full_osprey.mk)
+
+# Inherit some common Havoc stuff.
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_BOOTANIMATION_HALF_RES := true
@@ -22,8 +29,11 @@ TARGET_SCREEN_HEIGHT := 1280
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := osprey
-PRODUCT_NAME := lineage_osprey
+PRODUCT_NAME := havoc_osprey
 PRODUCT_MODEL := MotoG3
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := osprey
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.havoc.maintainer=Chil360
