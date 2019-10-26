@@ -34,3 +34,11 @@ PRODUCT_MODEL := MotoG3
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := osprey
+
+BUILD_FINGERPRINT := "motorola/osprey_retus/osprey_umts:6.0/MPI24.65-25.1/1:user/release-keys"
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=osprey \
+    TARGET_DEVICE="osprey"
+    PRIVATE_BUILD_DESC="osprey_retus-user 6.0 MPI24.65-25.1 1 release-keys"
+
