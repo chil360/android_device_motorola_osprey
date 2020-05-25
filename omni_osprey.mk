@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES  += ro.adb.secure=0
+
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
