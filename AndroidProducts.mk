@@ -14,10 +14,10 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_osprey.mk
+    $(LOCAL_DIR)/potato_osprey.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_osprey-user \
-    lineage_osprey-userdebug \
-    lineage_osprey-eng
+    potato_osprey-user \
+    potato_osprey-userdebug \
+    potato_osprey-eng
 
