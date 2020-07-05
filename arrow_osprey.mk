@@ -23,7 +23,7 @@ TARGET_MINIMAL_APPS := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := osprey
-PRODUCT_NAME := aosp_osprey
+PRODUCT_NAME := arrow-osprey
 PRODUCT_MODEL := MotoG3
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
