@@ -53,4 +53,7 @@
     <!-- True if the device supports at least one form of multi-window.
          E.g. freeform, split-screen, picture-in-picture. -->
     <bool name="config_supportsMultiWindow">false</bool>
+
+    <!-- Flag to disable all transition animations -->
+    <bool name="config_disableTransitionAnimation">true</bool>
 </resources>
