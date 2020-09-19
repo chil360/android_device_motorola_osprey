@@ -23,6 +23,7 @@
     </Settings>
     <Encoders>
         <!-- Video Hardware  -->
+        <!--
         <MediaCodec name="OMX.qcom.video.encoder.avc" type="video/avc" >
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports" />
@@ -56,9 +57,11 @@
             <Limit name="bitrate" range="1-2000000" />
             <Limit name="concurrent-instances" max="8" />
         </MediaCodec>
+        -->
     </Encoders>
     <Decoders>
         <!-- Video Hardware  -->
+        <!--
         <MediaCodec name="OMX.qcom.video.decoder.avc" type="video/avc" >
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports" />
@@ -103,6 +106,7 @@
             <Limit name="concurrent-instances" max="8" />
             <Feature name="adaptive-playback" />
         </MediaCodec>
+        -->
     </Decoders>
     <Include href="media_codecs_google_video_le.xml" />
 </MediaCodecs>
