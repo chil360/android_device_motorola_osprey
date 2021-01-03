@@ -17,6 +17,7 @@ $(call inherit-product, device/motorola/osprey/full_osprey.mk)
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 720×1280 : Please change as per your device resolution
+# TARGET_BOOT_ANIMATION_RES := 1080x1920 : Please change as per your device resolution
 
 TARGET_GAPPS_ARCH := arm
 TARGET_MINIMAL_APPS := true
