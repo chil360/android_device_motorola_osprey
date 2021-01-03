@@ -16,7 +16,7 @@
 $(call inherit-product, device/motorola/osprey/full_osprey.mk)
 
 # Boot animation
-TARGET_BOOT_ANIMATION_RES := 720
+TARGET_BOOT_ANIMATION_RES := 1080x1920 : Please change as per your device resolution
 
 TARGET_GAPPS_ARCH := arm
 TARGET_MINIMAL_APPS := true
@@ -28,3 +28,6 @@ PRODUCT_MODEL := MotoG3
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := osprey
+
+# Inherit some common Colt stuff.
+$(call inherit-product, vendor/colt/config/common_full_phone.mk)
