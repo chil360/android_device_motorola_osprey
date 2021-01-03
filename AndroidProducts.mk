@@ -14,10 +14,10 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_osprey.mk
+    $(LOCAL_DIR)/colt_osprey.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_osprey-user \
-    aosp_osprey-userdebug \
-    aosp_osprey-eng
+    colt_osprey-user \
+    colt_osprey-userdebug \
+    colt_osprey-eng
 
