@@ -17,7 +17,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from osprey device
-$(call inherit-product, device/motorola/osprey/full_osprey.mk)
+$(call inherit-product, device/motorola/osprey/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
